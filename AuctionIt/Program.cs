@@ -1,4 +1,6 @@
+using AuctionIt.Controllers;
 using AuctionIt.Data;
+using AuctionIt.Data.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,9 @@ builder.Services.AddControllersWithViews();
 //register connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//add Interface services
+builder.Services.AddScoped<IListingService, ListingService>();
 
 var app = builder.Build();
 
