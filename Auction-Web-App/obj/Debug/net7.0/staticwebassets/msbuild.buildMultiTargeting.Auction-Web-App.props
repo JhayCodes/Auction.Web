@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Auction-Web-App.props" />
+</Project>
