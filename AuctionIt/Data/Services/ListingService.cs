@@ -18,5 +18,12 @@ namespace AuctionIt.Data.Services
             
             return allListing;
         }
+
+        public async Task Add(Listing obj)
+        {
+
+            _db.Listings.Add(obj);
+            await _db.SaveChangesAsync();
+        }
     }
 }

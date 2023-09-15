@@ -1,6 +1,8 @@
 using AuctionIt.Controllers;
 using AuctionIt.Data;
 using AuctionIt.Data.Services;
+using AuctionIt.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,10 @@ builder.Services.AddControllersWithViews();
 //register connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//register identity service
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 //add Interface services
 builder.Services.AddScoped<IListingService, ListingService>();
@@ -34,6 +40,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Listing}/{action=Index}/{id?}");
 
 app.Run();
