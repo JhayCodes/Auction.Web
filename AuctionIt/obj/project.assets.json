@@ -3643,11 +3643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\AuctionIt.csproj",
+      "projectUniqueName": "d:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\AuctionIt.csproj",
       "projectName": "AuctionIt",
-      "projectPath": "D:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\AuctionIt.csproj",
+      "projectPath": "d:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\AuctionIt.csproj",
       "packagesPath": "C:\\Users\\Joshua Ucal Mensah\\.nuget\\packages\\",
-      "outputPath": "D:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\obj\\",
+      "outputPath": "d:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3662,7 +3662,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },

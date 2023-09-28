@@ -16,8 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 //register identity service
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
-
+.AddEntityFrameworkStores<ApplicationDbContext>();
 //add Interface services
 builder.Services.AddScoped<IListingService, ListingService>();
 
