@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "watch AuctionIt",
+			"file": "d:\\ProgramPractice\\C#\\Auction.Web\\AuctionIt\\AuctionIt.csproj",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"label": "dotnet: watch AuctionIt"
+		}
+	]
+}
